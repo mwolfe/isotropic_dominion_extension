@@ -28,14 +28,6 @@ function initializeOptions() {
   initializeOption('status_announce', false);
   initializeOption('always_display', true);
   initializeOption('show_card_counts', true);
-
-  // Sanity check the options.
-  if (!getOption('allow_disable') && !getOption('status_announce')) {
-    alert('Allowing disabling.\n' +
-          'If you do not want to allow disabling, please enable lobby status ' +
-          'and turn off this setting.');
-    setOption('status_announce', 'true');
-  }
 }
 
 function onButtonChange(evt) {
@@ -62,7 +54,6 @@ function createOptionButton(name, section, option) {
 function onDisableButtonChange() {
   var allow_disable = getOption('allow_disable');
   optionButtons['status_announce'].node.attr('disabled', allow_disable == false);
-  if (!allow_disable) setOption('status_announce', true);
 }
 
 function buildOptionsSection() {

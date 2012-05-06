@@ -942,15 +942,6 @@ function maybeRewriteName(doc) {
 }
 
 function maybeIntroducePlugin() {
-  if (!introduced && !disabled) {
-    writeText("★ Game scored by Dominion Point Counter ★");
-    writeText("http://goo.gl/iDihS");
-    writeText("Type !status to see the current score.");
-    writeText("Type !details to see deck details for each player.");
-    if (getOption("allow_disable")) {
-      writeText("Type !disable by turn 5 to disable the point counter.");
-    }
-  }
 }
 
 function maybeShowStatus(request_time) {
