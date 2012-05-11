@@ -914,18 +914,6 @@ function initialize(doc) {
     }
   }
 
-  // Assume it's already introduced if it's rewriting the tree for a reload.
-  // Otherwise setup to maybe introduce the extension.
-  if (!restoring_log) {
-    var wait_time = 200 * Math.floor(Math.random() * 10 + 5);
-    if (self_index != -1) {
-      wait_time = 300 * self_index;
-    }
-    console.log("Waiting " + wait_time + " to introduce " +
-        "(index is: " + self_index + ").");
-    setTimeout("maybeIntroducePlugin()", wait_time);
-  }
-
   if (getOption('show_card_counts')) {
     setupPerPlayerCardCounts();
   }
