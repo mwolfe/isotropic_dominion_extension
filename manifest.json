@@ -26,6 +26,8 @@
    "background": {
      "page": "background.html"
    },
+   "description": "Dominion Point Counter (No Announce)",
+   "name": "Dominion Point Counter (No Announce)",
    "version": "5.3.5",
    "manifest_version": 2
 }
