@@ -23,11 +23,11 @@
      "http://dominion.isotropic.org/",
      "http://dominion-point-counter.appspot.com/"
    ],
-   "description": "Dominion Point Counter",
-   "name": "Dominion Point Counter",
    "background": {
-   "page" : "background.html"
+     "page": "background.html"
    },
-   "version": "5.3",
+   "description": "Dominion Point Counter (No Announce)",
+   "name": "Dominion Point Counter (No Announce)",
+   "version": "5.3.5",
    "manifest_version": 2
 }
